@@ -10,8 +10,11 @@ let [counter, setCounter ] = useState(15)
 
   const addValue = () =>{
     console.log("Value Added", counter);
-    counter = counter+1;
-    setCounter(counter);
+    //counter = counter+1;
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
   }
 
   const removeValue = () =>{
